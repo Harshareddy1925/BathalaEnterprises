@@ -1,0 +1,30 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Modern 3BHK Apartment",
+      "location": "Koramangala",
+      "image": "uploads/default1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Luxury 2BHK Villa",
+      "location": "Whitefield",
+      "image": "uploads/default2.jpg"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Security Officers",
+      "description": "Professional security for all properties."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "password123"
+    }
+  ]
+}

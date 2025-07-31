@@ -1,0 +1,168 @@
+/* Custom Styles for Bathala Enterprises Website */
+
+/* 1. FONT DEFINITIONS */
+body {
+    font-family: 'Montserrat', sans-serif; /* Main font for the website */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-playfair {   
+    font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+/* Original Logo Fonts */
+.font-patua-one { 
+    font-family: 'Patua One', serif; 
+}
+.font-brush-script { 
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive; 
+}
+
+
+/* 2. HERO SECTION STYLES */
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/3b82f6/ffffff?text=');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.hero-main-text {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+.hero-tagline {
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+
+/* 3. GENERAL & RESPONSIVE FIXES */
+.section-title {
+    @apply text-4xl md:text-5xl font-bold text-gray-800 text-center mb-4;
+}
+.section-subtitle {
+    @apply text-center text-gray-500 mb-12 text-lg;
+}
+
+.service-card {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out hover:shadow-2xl border border-transparent hover:border-blue-500;
+}
+
+.properties-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem 0;
+}
+.properties-carousel:hover .properties-track {
+    animation-play-state: paused;
+}
+.properties-track {
+    display: flex;
+    width: calc(320px * 10);
+    animation: scroll 40s linear infinite;
+}
+.property-card {
+    flex-shrink: 0;
+    width: 300px;
+    margin: 0 10px;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+.property-card:hover {
+    transform: scale(1.05);
+    z-index: 20;
+}
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-320px * 5)); }
+}
+
+#chatbot-container {
+    position: fixed !important;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+}
+#chatbot-popup {
+    position: absolute;
+    bottom: 110%;
+    right: 0;
+    width: max-content;
+}
+
+/* Chatbot Message Styles */
+.chat-message { margin-bottom: 1rem; display: flex; max-width: 85%; }
+.chat-message p { padding: 0.75rem; border-radius: 0.75rem; word-wrap: break-word; }
+.bot-message { justify-content: flex-start; }
+.bot-message p { background-color: #e5e7eb; color: #1f2937; border-bottom-left-radius: 0; }
+.user-message { justify-content: flex-end; margin-left: auto; }
+.user-message p { background-color: #3b82f6; color: white; border-bottom-right-radius: 0; }
+.chatbot-loading p { background-color: #e5e7eb; color: #1f2937; border-bottom-left-radius: 0; display: flex; align-items: center; }
+.chatbot-loading span { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: #9ca3af; margin: 0 2px; animation: bounce 1.4s infinite ease-in-out both; }
+.chatbot-loading span:nth-child(1) { animation-delay: -0.32s; }
+.chatbot-loading span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+
+/* --- MOBILE RESPONSIVE FIXES --- */
+@media (max-width: 768px) {
+    .hero-bg {
+        background-attachment: scroll;
+        background-position: center center;
+    }
+
+    .hero-main-text {
+        font-size: 3rem; /* Adjusted for two-span logo */
+        line-height: 1.2;
+    }
+    .hero-main-text > span:last-child {
+        font-size: 3.5rem; /* Adjust script font size */
+    }
+    .hero-tagline {
+        font-size: 1.125rem;
+    }
+
+    .section-title {
+        @apply text-3xl;
+    }
+    .section-subtitle {
+        @apply text-base;
+    }
+
+    #chatbot-container {
+        bottom: 16px;
+        right: 16px;
+    }
+    #chatbot-toggle {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    #chatbot-toggle > i {
+        font-size: 1.25rem;
+    }
+    #chatbot-popup {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
+    }
+    #chatbot-window {
+        width: calc(100vw - 32px);
+        max-width: 320px;
+        bottom: 5rem;
+        right: 0;
+    }
+}

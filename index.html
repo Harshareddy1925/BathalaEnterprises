@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathala Enterprises - Your Trusted Property Partner</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display, Montserrat, and Patua One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Patua+One&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-blue-600">
+                <span class="font-patua-one">BATHALA</span> <span
+                    class="font-brush-script text-2xl md:text-3xl">Enterprises</span>
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="properties.html"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300">Properties</a>
+                <a href="contact.html"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105">Contact
+                    Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <i class="fas fa-bars text-2xl text-gray-600"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+            <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+            <a href="properties.html" class="block py-2 text-gray-600 hover:text-blue-600">Properties</a>
+            <a href="contact.html" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-full text-center">Contact
+                Us</a>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white h-[70vh] md:h-[80vh] flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight hero-main-text">
+                    <span class="font-patua-one">BATHALA</span>
+                    <span class="font-brush-script text-6xl md:text-8xl">Enterprises</span>
+                </h1>
+                <p class="text-lg md:text-2xl font-light mb-8 hero-tagline">
+                    Building Trust, One Property at a Time.
+                </p>
+                <a href="services.html"
+                    class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition-colors duration-300 transform hover:scale-105">Explore
+                    Our Services</a>
+            </div>
+        </section>
+        <!-- About Us Snippet Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">About Our Enterprise</h2>
+                <p class="section-subtitle">Your reliable partner since 2019.</p><br>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/e0f2fe/3b82f6?text=Our+Team"
+                            alt="Bathala Enterprises Team"
+                            class="rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4">A Tradition of Excellence and Trust</h3>
+                        <p class="text-gray-600 mb-4">
+                            Bathala Enterprises is a property management company dedicated to providing top-notch
+                            services. Since our inception in 2019, we have been committed to customer satisfaction and
+                            expertise in property management.
+                        </p>
+                        <a href="about.html" class="font-semibold text-blue-600 hover:text-blue-800">Learn More About Us
+                            <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Snippet Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Comprehensive Services</h2>
+                <p class="section-subtitle">One-stop solution for all your property needs.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1: Security -->
+                    <div class="service-card">
+                        <div class="p-6 text-center">
+                            <i class="fas fa-shield-halved text-5xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Security Officers</h3>
+                            <p class="text-gray-600">Professional security for residential and commercial properties.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Service Card 2: All Building Services -->
+                    <div class="service-card">
+                        <div class="p-6 text-center">
+                            <i class="fas fa-hard-hat text-5xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Building Services</h3>
+                            <p class="text-gray-600">Carpentry, electrical, plumbing, painting, and more.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 3: Flats for Lease/Sale -->
+                    <div class="service-card">
+                        <div class="p-6 text-center">
+                            <i class="fas fa-building text-5xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">Flats for Lease/Sale</h3>
+                            <p class="text-gray-600">Find premium flats with zero brokerage fees.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="services.html"
+                        class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105">View
+                        All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Snippet Section -->
+        <section id="properties" class="py-20 bg-blue-50 overflow-x-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Featured Properties</h2>
+                <p class="section-subtitle">Find your next home in Bangalore with <span
+                        class="font-semibold text-blue-600">ZERO Brokerage</span>.</p>
+            </div>
+            <div class="properties-carousel">
+                <div class="properties-track">
+                    <!-- Property Cards will be duplicated in JS for seamless scroll -->
+                    <div class="property-card">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+1" alt="Property 1">
+                        <div class="p-4">
+                            <h3 class="font-bold">Modern 3BHK Apartment</h3>
+                            <p class="text-sm text-gray-600">Koramangala</p>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+2" alt="Property 2">
+                        <div class="p-4">
+                            <h3 class="font-bold">Luxury 2BHK Villa</h3>
+                            <p class="text-sm text-gray-600">Whitefield</p>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+3" alt="Property 3">
+                        <div class="p-4">
+                            <h3 class="font-bold">Cozy 1BHK Studio</h3>
+                            <p class="text-sm text-gray-600">Electronic City</p>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+4" alt="Property 4">
+                        <div class="p-4">
+                            <h3 class="font-bold">Spacious Duplex</h3>
+                            <p class="text-sm text-gray-600">Indiranagar</p>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+5" alt="Property 5">
+                        <div class="p-4">
+                            <h3 class="font-bold">Gated Community Villa</h3>
+                            <p class="text-sm text-gray-600">Sarjapur Road</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="properties.html"
+                    class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-200 transition-colors duration-300 transform hover:scale-105">See
+                    All Properties</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><span class="font-patua-one">BATHALA</span> <span
+                            class="font-brush-script text-2xl">Enterprises</span></h3>
+                    <p class="text-gray-400">Your complete property solution partner in Bangalore since 2019.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-gray-400 hover:text-white">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="properties.html" class="text-gray-400 hover:text-white">Properties</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400">6300543674</p>
+                    <p class="text-gray-400">bathalaenterprises@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.facebook.com/share/12Mr3mSV7hJ/" target="_blank"
+                            class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/916300543674" target="_blank"
+                            class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:bathalaenterprises@gmail.com" class="text-gray-400 hover:text-white text-2xl"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Bathala Enterprises. All Rights Reserved. | <a href="admin/index.html"
+                        class="hover:text-white">Admin Login</a></p>
+            </div>
+        </div>
+    </footer>
+
+<!-- WhatsApp Floating Button -->
+<div id="whatsapp-container" class="fixed bottom-6 right-6 z-50">
+    <!-- Popup Message -->
+    <div id="whatsapp-popup" class="bg-blue-600 text-white py-2 px-4 rounded-lg shadow-xl mb-2 relative opacity-0 translate-y-2 transform transition-all duration-500 ease-out">
+        <p>Any queries?</p>
+        <button id="close-whatsapp-popup" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full h-6 w-6 flex items-center justify-center">&times;</button>
+    </div>
+    <!-- WhatsApp Icon Link -->
+    <a href="https://wa.me/916300543674" target="_blank" id="whatsapp-btn" class="bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp text-4xl"></i>
+    </a>
+</div>
+
+    <!-- General Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/properties.js"></script> <!-- Keep this only on index.html -->
+
+</body>
+
+</html>

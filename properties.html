@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathala Enterprises - Your Trusted Property Partner</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display, Montserrat, and Patua One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Patua+One&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head><body class="bg-gray-50">
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-blue-600">
+                <span class="font-patua-one">BATHALA</span> <span
+                    class="font-brush-script text-2xl md:text-3xl">Enterprises</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="properties.html" class="text-blue-600 font-semibold transition duration-300">Properties</a>
+                <a href="contact.html"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105">Contact
+                    Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <i class="fas fa-bars text-2xl text-gray-600"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+            <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+            <a href="properties.html" class="block py-2 text-blue-600 font-semibold">Properties</a>
+            <a href="contact.html" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-full text-center">Contact
+                Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-blue-50 py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl font-bold text-gray-800">Properties for Rent, Lease & Sale</h1>
+                <p class="text-gray-600 mt-2">Find your dream home in Bengaluru with our <span
+                        class="font-semibold text-blue-600">Zero Brokerage</span> promise.</p>
+            </div>
+        </section>
+
+        <!-- Property Gallery Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <!-- Note: In a real application, this section would be dynamically populated from the admin panel -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Property Card 1 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+1" alt="Property 1"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Modern 3BHK Apartment</h3>
+                            <p class="text-gray-500 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Koramangala,
+                                Bangalore</p>
+                            <p class="text-gray-700 mb-4">Spacious, well-lit apartment in a prime location. Perfect for
+                                families. Comes with modular kitchen and reserved parking.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-lg font-bold text-blue-600">Price on Request</p>
+                                <a href="contact.html"
+                                    class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-200">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 2 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+2" alt="Property 2"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Luxury 2BHK Villa</h3>
+                            <p class="text-gray-500 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Whitefield,
+                                Bangalore</p>
+                            <p class="text-gray-700 mb-4">Elegant villa with modern amenities, 24/7 security, and a
+                                private garden. Ideal for professionals seeking comfort.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-lg font-bold text-blue-600">Price on Request</p>
+                                <a href="contact.html"
+                                    class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-200">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 3 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+3" alt="Property 3"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Cozy 1BHK Studio</h3>
+                            <p class="text-gray-500 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Electronic City,
+                                Bangalore</p>
+                            <p class="text-gray-700 mb-4">A compact and affordable studio apartment, fully furnished and
+                                perfect for students or bachelors working in the tech park.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-lg font-bold text-blue-600">Price on Request</p>
+                                <a href="contact.html"
+                                    class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-200">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 4 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+4" alt="Property 4"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Spacious Duplex House</h3>
+                            <p class="text-gray-500 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Indiranagar,
+                                Bangalore</p>
+                            <p class="text-gray-700 mb-4">A beautiful duplex house for sale in a posh locality. Features
+                                a rooftop terrace and high-end interiors.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-lg font-bold text-blue-600">Price on Request</p>
+                                <a href="contact.html"
+                                    class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-200">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 5 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+5" alt="Property 5"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">Gated Community Villa</h3>
+                            <p class="text-gray-500 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Sarjapur Road,
+                                Bangalore</p>
+                            <p class="text-gray-700 mb-4">4BHK villa for lease in a premium gated community with a
+                                clubhouse, swimming pool, and other luxury amenities.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-lg font-bold text-blue-600">Price on Request</p>
+                                <a href="contact.html"
+                                    class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-200">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card 6 -->
+                    <div
+                        class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/bfdbfe/1e40af?text=Premium+Flat+6" alt="Property 6"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold">2BHK Apartment for Rent</h3>
+                            <p class="text-gray-500 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>HSR Layout,
+                                Bangalore</p>
+                            <p class="text-gray-700 mb-4">Well-maintained 2BHK apartment available for immediate rent.
+                                Close to parks, markets, and restaurants.</p>
+                            <div class="flex justify-between items-center">
+                                <p class="text-lg font-bold text-blue-600">Price on Request</p>
+                                <a href="contact.html"
+                                    class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-200">Inquire</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><span class="font-patua-one">BATHALA</span> <span
+                            class="font-brush-script text-2xl">Enterprises</span></h3>
+                    <p class="text-gray-400">Your complete property solution partner in Bangalore since 2019.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-gray-400 hover:text-white">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="properties.html" class="text-gray-400 hover:text-white">Properties</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400">6300543674</p>
+                    <p class="text-gray-400">bathalaenterprises@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.facebook.com/share/12Mr3mSV7hJ/" target="_blank"
+                            class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/916300543674" target="_blank"
+                            class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:bathalaenterprises@gmail.com" class="text-gray-400 hover:text-white text-2xl"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Bathala Enterprises. All Rights Reserved. | <a href="admin/index.html"
+                        class="hover:text-white">Admin Login</a></p>
+            </div>
+        </div>
+    </footer>
+
+<!-- WhatsApp Floating Button -->
+<div id="whatsapp-container" class="fixed bottom-6 right-6 z-50">
+    <!-- Popup Message -->
+    <div id="whatsapp-popup" class="bg-blue-600 text-white py-2 px-4 rounded-lg shadow-xl mb-2 relative opacity-0 translate-y-2 transform transition-all duration-500 ease-out">
+        <p>Any queries?</p>
+        <button id="close-whatsapp-popup" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full h-6 w-6 flex items-center justify-center">&times;</button>
+    </div>
+    <!-- WhatsApp Icon Link -->
+    <a href="https://wa.me/916300543674" target="_blank" id="whatsapp-btn" class="bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp text-4xl"></i>
+    </a>
+</div>
+
+    <!-- General Scripts -->
+    <script src="js/main.js"></script>
+    
+    
+</body>
+
+</html>

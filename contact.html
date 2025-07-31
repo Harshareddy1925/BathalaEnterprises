@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bathala Enterprises - Your Trusted Property Partner</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display, Montserrat, and Patua One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Patua+One&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-blue-600">
+                <span class="font-patua-one">BATHALA</span> <span
+                    class="font-brush-script text-2xl md:text-3xl">Enterprises</span>
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Services</a>
+                <a href="properties.html"
+                    class="text-gray-600 hover:text-blue-600 transition duration-300">Properties</a>
+                <a href="contact.html"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105">Contact
+                    Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <i class="fas fa-bars text-2xl text-gray-600"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+            <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+            <a href="properties.html" class="block py-2 text-gray-600 hover:text-blue-600">Properties</a>
+            <a href="contact.html" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-full text-center">Contact
+                Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="bg-blue-50 py-12">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl font-bold text-gray-800">Get In Touch</h1>
+                <p class="text-gray-600 mt-2">We're here to help. Contact us for bookings, inquiries, and support.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row gap-10 lg:gap-20">
+                    <!-- Contact Info -->
+                    <div class="lg:w-2/5">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-map-marker-alt text-2xl text-blue-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Our Office Address</h4>
+                                    <p class="text-gray-600">BATHALA ENTERPRISES VJ2X+PV3, Green House Layout,
+                                        Chikkathoguru, Electronic City, Bengaluru, Karnataka 560100</p>
+                                    <a href="https://maps.app.goo.gl/GnR1hH39r3HYXB8AA" target="_blank"
+                                        class="text-blue-600 hover:underline mt-1 inline-block">View on Google Maps</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-phone text-2xl text-blue-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Phone / WhatsApp</h4>
+                                    <p class="text-gray-600">6300543674</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-envelope text-2xl text-blue-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Email Address</h4>
+                                    <p class="text-gray-600">bathalaenterprises@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <i class="fas fa-clock text-2xl text-blue-500 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Working Hours</h4>
+                                    <p class="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                                    <p class="text-gray-600">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="lg:w-3/5 bg-gray-50 p-8 rounded-lg shadow-inner">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                    <input type="text" id="name" name="name"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email
+                                        Address</label>
+                                    <input type="email" id="email" name="email"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service of
+                                    Interest</label>
+                                <select id="service" name="service"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white">
+                                    <option>General Inquiry</option>
+                                    <option>Security Services</option>
+                                    <option>Carpenter Services</option>
+                                    <option>Electrician Services</option>
+                                    <option>Other Building Services</option>
+                                    <option>Flats for Rent/Lease/Sale</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </form>
+                        <div id="form-message" class="mt-4 text-center"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold mb-4"><span class="font-patua-one">BATHALA</span> <span
+                            class="font-brush-script text-2xl">Enterprises</span></h3>
+                    <p class="text-gray-400">Your complete property solution partner in Bangalore since 2019.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2"><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-gray-400 hover:text-white">Services</a>
+                        </li>
+                        <li class="mb-2"><a href="properties.html" class="text-gray-400 hover:text-white">Properties</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400">6300543674</p>
+                    <p class="text-gray-400">bathalaenterprises@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.facebook.com/share/12Mr3mSV7hJ/" target="_blank"
+                            class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/916300543674" target="_blank"
+                            class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:bathalaenterprises@gmail.com" class="text-gray-400 hover:text-white text-2xl"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Bathala Enterprises. All Rights Reserved. | <a href="admin/index.html"
+                        class="hover:text-white">Admin Login</a></p>
+            </div>
+        </div>
+    </footer>
+
+<!-- WhatsApp Floating Button -->
+<div id="whatsapp-container" class="fixed bottom-6 right-6 z-50">
+    <!-- Popup Message -->
+    <div id="whatsapp-popup" class="bg-blue-600 text-white py-2 px-4 rounded-lg shadow-xl mb-2 relative opacity-0 translate-y-2 transform transition-all duration-500 ease-out">
+        <p>Any queries?</p>
+        <button id="close-whatsapp-popup" class="absolute -top-2 -right-2 bg-red-500 text-white rounded-full h-6 w-6 flex items-center justify-center">&times;</button>
+    </div>
+    <!-- WhatsApp Icon Link -->
+    <a href="https://wa.me/916300543674" target="_blank" id="whatsapp-btn" class="bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp text-4xl"></i>
+    </a>
+</div>
+
+    <!-- General Scripts -->
+    <script src="js/main.js"></script>
+    
+    
+<script>
+    const contactForm = document.getElementById('contactForm');
+    const formMessage = document.getElementById('form-message');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('http://localhost:3000/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    formMessage.textContent = result.message;
+                    formMessage.className = 'text-green-600 mt-4 text-center';
+                    contactForm.reset();
+                } else {
+                    formMessage.textContent = result.message || 'An error occurred.';
+                    formMessage.className = 'text-red-600 mt-4 text-center';
+                }
+
+            } catch (error) {
+                console.error('Contact form error:', error);
+                formMessage.textContent = 'Could not send message. Please try again later.';
+                formMessage.className = 'text-red-600 mt-4 text-center';
+            }
+
+            setTimeout(() => {
+                formMessage.textContent = '';
+            }, 5000);
+        });
+    }
+</script>
+</body>
+
+</html>
