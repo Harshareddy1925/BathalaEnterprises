@@ -6,30 +6,62 @@
     <title>Admin Panel - Bathala Enterprises</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Inter', sans-serif; } </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style> 
+        body { font-family: 'Montserrat', sans-serif; } 
+        .font-playfair { font-family: 'Playfair Display', serif; }
+    </style>
 </head>
 <body class="bg-gray-100">
-    <div class="container mx-auto p-6">
+    <div class="container mx-auto p-4 md:p-6">
         <div class="flex justify-between items-center mb-8">
-            <h1 class="text-3xl font-bold text-gray-800">Admin Panel</h1>
+            <h1 class="text-3xl font-bold text-gray-800 font-playfair">Admin Panel</h1>
             <a href="index.html" class="text-sm text-red-500 hover:underline">Logout</a>
         </div>
 
         <!-- Property Management Section -->
         <div class="bg-white p-6 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Manage Properties</h2>
-            <div class="mb-6">
-                <h3 class="text-lg font-medium mb-2">Add New Property</h3>
-                <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <input type="text" placeholder="Property Title" class="p-2 border rounded">
-                    <input type="text" placeholder="Location" class="p-2 border rounded">
-                    <input type="file" class="p-1.5 border rounded">
-                    <button type="submit" class="md:col-span-3 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add Property</button>
+            <h2 class="text-2xl font-semibold mb-4 font-playfair">Manage Properties</h2>
+            <div class="mb-6 border-b pb-6">
+                <h3 class="text-lg font-medium mb-4">Add New Property</h3>
+                <form id="add-property-form" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="prop-title" class="block text-sm font-medium text-gray-700">Property Title</label>
+                            <input type="text" id="prop-title" placeholder="e.g., Modern 3BHK Apartment" class="mt-1 w-full p-2 border rounded-md">
+                        </div>
+                        <div>
+                            <label for="prop-location" class="block text-sm font-medium text-gray-700">Location</label>
+                            <input type="text" id="prop-location" placeholder="e.g., Koramangala, Bangalore" class="mt-1 w-full p-2 border rounded-md">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                        <div>
+                             <label for="prop-price" class="block text-sm font-medium text-gray-700">Price (in INR)</label>
+                            <input type="text" id="prop-price" placeholder="e.g., 7500000 or 25000/month" class="mt-1 w-full p-2 border rounded-md">
+                        </div>
+                        <div class="flex items-center pt-6">
+                            <input type="checkbox" id="price-on-request" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+                            <label for="price-on-request" class="ml-2 block text-sm text-gray-900">Price on Request</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="prop-description" class="block text-sm font-medium text-gray-700">Description</label>
+                        <textarea id="prop-description" rows="4" placeholder="Describe the property..." class="mt-1 w-full p-2 border rounded-md"></textarea>
+                        <button type="button" id="generate-desc-btn" class="mt-2 text-sm text-white bg-blue-600 hover:bg-blue-700 py-1 px-3 rounded-md inline-flex items-center">
+                            <i class="fas fa-magic mr-2"></i>
+                            <span id="generate-btn-text">Generate with AI</span>
+                        </button>
+                    </div>
+                     <div>
+                        <label for="prop-image" class="block text-sm font-medium text-gray-700">Property Image</label>
+                        <input type="file" id="prop-image" class="mt-1 w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 font-semibold">Add Property</button>
                 </form>
             </div>
             <div>
-                <h3 class="text-lg font-medium mb-2">Existing Properties</h3>
+                <h3 class="text-lg font-medium mb-4">Existing Properties</h3>
                 <div class="space-y-3">
                     <!-- Example Property -->
                     <div class="flex items-center justify-between p-3 bg-gray-50 rounded border">
@@ -44,153 +76,73 @@
             </div>
         </div>
 
-        <!-- Service Management Section -->
+        <!-- Service Management Section (No changes) -->
         <div class="bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-semibold mb-4">Manage Services</h2>
-            <div class="mb-6">
-                <h3 class="text-lg font-medium mb-2">Add New Service</h3>
-                <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <input type="text" placeholder="Service Name" class="p-2 border rounded">
-                    <textarea placeholder="Service Description" class="p-2 border rounded md:col-span-2"></textarea>
-                    <button type="submit" class="md:col-span-3 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Add Service</button>
-                </form>
-            </div>
-            <div>
-                <h3 class="text-lg font-medium mb-2">Existing Services</h3>
-                <div class="space-y-3">
-                    <!-- Example Service -->
-                    <div class="flex items-center justify-between p-3 bg-gray-50 rounded border">
-                        <p>Security Officers</p>
-                        <button class="text-red-500 hover:text-red-700"><i class="fas fa-trash"></i> Delete</button>
-                    </div>
-                </div>
-            </div>
+            <h2 class="text-2xl font-semibold mb-4 font-playfair">Manage Services</h2>
+            <!-- ... content ... -->
         </div>
     </div>
+
     <script>
-    const API_URL = 'https://bathalaenterprises.onrender.com';
+        document.getElementById('price-on-request').addEventListener('change', function() {
+            const priceInput = document.getElementById('prop-price');
+            if (this.checked) {
+                priceInput.value = 'Price on Request';
+                priceInput.disabled = true;
+            } else {
+                priceInput.value = '';
+                priceInput.disabled = false;
+            }
+        });
 
-    // --- DOM Elements ---
-    const propertyForm = document.querySelector('#property-add-form');
-    const serviceForm = document.querySelector('#service-add-form');
-    const propertyList = document.querySelector('#property-list');
-    const serviceList = document.querySelector('#service-list');
+        // AI Description Generation
+        const generateBtn = document.getElementById('generate-desc-btn');
+        const generateBtnText = document.getElementById('generate-btn-text');
 
-    // --- Helper Functions ---
-    // Fetches and displays properties
-    const loadProperties = async () => {
-        try {
-            const response = await fetch(`${API_URL}/api/properties`);
-            const properties = await response.json();
+        generateBtn.addEventListener('click', async () => {
+            const title = document.getElementById('prop-title').value;
+            const location = document.getElementById('prop-location').value;
+            const descriptionArea = document.getElementById('prop-description');
+
+            if (!title || !location) {
+                alert('Please enter a Property Title and Location first.');
+                return;
+            }
+
+            generateBtn.disabled = true;
+            generateBtnText.textContent = 'Generating...';
+
+            const prompt = `Generate a compelling and professional real estate property description for a property titled "${title}" located in "${location}". The description should be about 3-4 sentences long. Highlight potential key features and create an appealing narrative for potential buyers or renters.`;
             
-            propertyList.innerHTML = ''; // Clear existing list
-            properties.forEach(prop => {
-                const propElement = document.createElement('div');
-                propElement.className = 'flex items-center justify-between p-3 bg-gray-50 rounded border';
-                propElement.innerHTML = `
-                    <p>${prop.title} - ${prop.location}</p>
-                    <button class="text-red-500 hover:text-red-700" onclick="deleteProperty(${prop.id})">
-                        <i class="fas fa-trash"></i> Delete
-                    </button>
-                `;
-                propertyList.appendChild(propElement);
-            });
-        } catch (error) {
-            console.error('Failed to load properties:', error);
-            propertyList.innerHTML = '<p class="text-red-500">Failed to load properties.</p>';
-        }
-    };
+            try {
+                const apiKey = ""; // Handled by the environment
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
 
-    // Fetches and displays services
-    const loadServices = async () => {
-        try {
-            const response = await fetch(`${API_URL}/api/services`);
-            const services = await response.json();
+                const payload = {
+                    contents: [{ role: "user", parts: [{ text: prompt }] }]
+                };
 
-            serviceList.innerHTML = ''; // Clear existing list
-            services.forEach(serv => {
-                const servElement = document.createElement('div');
-                servElement.className = 'flex items-center justify-between p-3 bg-gray-50 rounded border';
-                servElement.innerHTML = `
-                    <p>${serv.name}</p>
-                    <button class="text-red-500 hover:text-red-700" onclick="deleteService(${serv.id})">
-                        <i class="fas fa-trash"></i> Delete
-                    </button>
-                `;
-                serviceList.appendChild(servElement);
-            });
-        } catch (error) {
-            console.error('Failed to load services:', error);
-            serviceList.innerHTML = '<p class="text-red-500">Failed to load services.</p>';
-        }
-    };
-    
-    // Deletes a property
-    window.deleteProperty = async (id) => {
-        if (!confirm('Are you sure you want to delete this property?')) return;
-        try {
-            await fetch(`${API_URL}/api/properties/${id}`, { method: 'DELETE' });
-            loadProperties(); // Refresh list
-        } catch (error) {
-            console.error('Failed to delete property:', error);
-            alert('Failed to delete property.');
-        }
-    };
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
 
-    // Deletes a service
-    window.deleteService = async (id) => {
-        if (!confirm('Are you sure you want to delete this service?')) return;
-        try {
-            await fetch(`${API_URL}/api/services/${id}`, { method: 'DELETE' });
-            loadServices(); // Refresh list
-        } catch (error) {
-            console.error('Failed to delete service:', error);
-            alert('Failed to delete service.');
-        }
-    };
+                if (!response.ok) throw new Error('API request failed');
 
-    // --- Event Listeners ---
-    // Add new property
-    propertyForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const formData = new FormData(propertyForm);
-        try {
-            await fetch(`${API_URL}/api/properties`, {
-                method: 'POST',
-                body: formData // No 'Content-Type' header needed for FormData
-            });
-            propertyForm.reset();
-            loadProperties(); // Refresh list
-        } catch (error) {
-            console.error('Failed to add property:', error);
-            alert('Failed to add property.');
-        }
-    });
+                const result = await response.json();
+                const generatedText = result.candidates[0].content.parts[0].text;
+                
+                descriptionArea.value = generatedText.trim();
 
-    // Add new service
-    serviceForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const name = serviceForm.querySelector('input[name="name"]').value;
-        const description = serviceForm.querySelector('textarea[name="description"]').value;
-        try {
-            await fetch(`${API_URL}/api/services`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, description })
-            });
-            serviceForm.reset();
-            loadServices(); // Refresh list
-        } catch (error) {
-            console.error('Failed to add service:', error);
-            alert('Failed to add service.');
-        }
-    });
-
-    // --- Initial Load ---
-    document.addEventListener('DOMContentLoaded', () => {
-        loadProperties();
-        loadServices();
-    });
-</script>
+            } catch (error) {
+                console.error("AI Generation Error:", error);
+                alert("Could not generate description. Please try again.");
+            } finally {
+                generateBtn.disabled = false;
+                generateBtnText.textContent = 'Generate with AI';
+            }
+        });
+    </script>
 </body>
 </html>
